@@ -1,65 +1,73 @@
 import React from "react";
-import {
-  FaDribbbleSquare,
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaInstagram,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
-      <div>
-        <h1 className="text-3xl w-full font-bold text-[#00df9a]">Datapulse.</h1>
-        <p className="py-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-          optio placeat nesciunt non enim fugit quos neque sapiente soluta
-          voluptatibus perferendis dicta magni assumenda necessitatibus.
-        </p>
-        <div className="flex  justify-between md:w-[75%] ">
-          <FaFacebookSquare size={30} className="hover:text-[#00df9a]" />
-          <FaInstagram size={30} className="hover:text-[#00df9a]" />
-          <FaTwitterSquare size={30} className="hover:text-[#00df9a]" />
-          <FaGithubSquare size={30} className="hover:text-[#00df9a]" />
-          <FaDribbbleSquare size={30} className="hover:text-[#00df9a]" />
-        </div>
-      </div>
-      <div className="lg:col-span-2 flex justify-between mt-6">
+    <div className="max-w-full mx-auto py-16 px-12 bg-[#3e257c]">
+      <div className="grid grid-cols-4 gap-8 text-gray-400 bg-[#3e257c] ml-[40px]">
         <div>
-          <h6 className="font-medium text-gray-600">Solutions</h6>
+          <h6 className="font-medium text-white text-lg">Persoons Busje</h6>
           <ul>
-            <li className="py-2 text-sm">Analytics</li>
-            <li className="py-2 text-sm">Marketing</li>
-            <li className="py-2 text-sm">Commerce</li>
-            <li className="py-2 text-sm">Insights</li>
+            <li className="py-2 text-sm hover:text-[#d6c6fe] hover:underline cursor-pointer">
+              9 Persoons busje huren
+            </li>
+            <li className="py-2 text-sm hover:text-[#d6c6fe] hover:underline cursor-pointer">
+              Persoons busje huren
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 className="font-medium text-white text-lg">Belangrijke Pagina's</h6>
+          <ul>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Bestel Busje Huren
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Provincies Busjes
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Aanbieders Busjes
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Auto huren
+            </li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-600">Support</h6>
+          <h6 className="font-medium text-white text-lg">Extra Producten</h6>
           <ul>
-            <li className="py-2 text-sm">Pricing</li>
-            <li className="py-2 text-sm">Documentation</li>
-            <li className="py-2 text-sm">Guides</li>
-            <li className="py-2 text-sm">API Status</li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Volkswagen Busje Huren
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Vakantie Busje Huren
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Verhuiswagen Huren
+            </li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-600">Company</h6>
+          <h6 className="font-medium text-white text-lg">Nieuws & Contact</h6>
           <ul>
-            <li className="py-2 text-sm">About</li>
-            <li className="py-2 text-sm">Blog</li>
-            <li className="py-2 text-sm">Jobs</li>
-            <li className="py-2 text-sm">Press</li>
-            <li className="py-2 text-sm">Carreers</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className="font-medium text-gray-600">Legal</h6>
-          <ul>
-            <li className="py-2 text-sm">Claim</li>
-            <li className="py-2 text-sm">Policy</li>
-            <li className="py-2 text-sm">Terms</li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Nieuws
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Over{" "}
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline cursor-pointer"
+              >
+                Google.com
+              </a>
+            </li>
+            <li className="py-2 text-sm hover:underline cursor-pointer">
+              Contact
+            </li>
           </ul>
         </div>
       </div>

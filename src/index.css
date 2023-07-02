@@ -1,12 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 * {
-  font-family: Roboto slab, open sans;
+  font-family: "Open Sans", sans-serif;
 }
-
 
 .underline-black {
   text-decoration-color: rgb(0, 0, 0);
@@ -20,7 +19,7 @@ li {
 .bg-image {
   position: relative;
   height: 100vh;
-  background-image: url("../src/assets/PersoonsBusjeAchtergrond.png");
+  background-image: url("assets/mainBg.png");
   background-size: cover;
   background-position: center;
   margin-top: 1px;
@@ -32,22 +31,68 @@ li {
   margin-top: -50px;
 }
 
-
-
-
-::-webkit-scrollbar-thumb {
-  background-color: #6e47cf;
-  border-radius: 30px;
+.listItems li {
+  padding-bottom: 7px;
+  font-weight: lighter;
 }
 
+.listItems li:hover {
+  color: #221839;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-::-webkit-scrollbar {
-  width: 10px;
+.listItems li:last-child {
+  padding-bottom: 20px;
+}
+
+.car-container {
   background-color: white;
-  
+  border-radius: 20px;
+  color: #6e47cf;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-
-::-webkit-scrollbar-corner {
-  background-color: #f5f5f5;
+.car-page-title {
+  color: #3e257c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  height: 100%;
+  width: 70%;
+  max-width: 1100px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Add more CSS styling as needed */
